@@ -27,7 +27,7 @@ def test_letters_can_be_entered(browser):
     assert page.value() == "test"
 
 
-@pytest.mark.advanced
+@pytest.mark.basic
 @pytest.mark.regression
 def test_arrow_up_changes_number(browser):
     page = InputsPage(browser)
@@ -38,7 +38,7 @@ def test_arrow_up_changes_number(browser):
     assert page.value() == "11"
 
 
-@pytest.mark.advanced
+@pytest.mark.basic
 @pytest.mark.regression
 def test_arrow_down_changes_number(browser):
     page = InputsPage(browser)

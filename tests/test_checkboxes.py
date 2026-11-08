@@ -17,7 +17,7 @@ def test_first_checkbox_can_be_checked(browser):
     assert boxes[0].is_selected() is True
 
 
-@pytest.mark.advanced
+@pytest.mark.basic
 @pytest.mark.regression
 def test_second_checkbox_can_be_unchecked(browser):
     page = CheckboxesPage(browser)
